@@ -149,8 +149,8 @@
 										width: 600,
 										height: 200,
 										renderer: 'line',
-										//min: parseFloat(datastream.min_value) - .5*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
-										min: 10,
+										min: parseFloat(datastream.min_value), //- .5*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+										//min: 10,
 										//max: parseFloat(datastream.max_value) + .5*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										max: 30, 
 										padding: {
@@ -393,7 +393,7 @@
 
 	if(applicationName != '') {
 		$('h1').html(applicationName).css('color', 'white');
-		document.title = applicationName + parseFloat(datastream.min_value) + ' - Powered by Xively';
+		document.title = applicationName + ' - Powered by Xively';
 	}
 
 	if(dataColor == '') {
