@@ -149,10 +149,10 @@
 										width: 600,
 										height: 200,
 										renderer: 'line',
-										min: parseFloat(datastream.min_value), //- .5*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+										min: parseFloat(datastream.min_value) - .5*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
 										//min: 10,
-										//max: parseFloat(datastream.max_value) + .5*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
-										max: 30, 
+										max: parseFloat(datastream.max_value) + .5*(parseFloat(datastream.max_value) - parseFloat(datastream.min_value)),
+										//max: 30, 
 										padding: {
 											top: 0.02,
 											right: 0.02,
